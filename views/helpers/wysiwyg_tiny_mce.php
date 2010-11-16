@@ -54,7 +54,7 @@
 			App::import('Helper', 'Html');
 			$this->Html = new HtmlHelper();
 
-			return $this->Html->scriptBlock("tinyMCE.init({ $lines });");
+			return $this->Html->scriptBlock("tinyMCE.init({ $lines });", array('inline' => false));
 		}
 	}
 ?>
