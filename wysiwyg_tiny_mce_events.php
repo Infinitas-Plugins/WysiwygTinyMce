@@ -3,11 +3,11 @@
 	 * events for ck_editor
 	 */
 	class WysiwygTinyMceEvents{
-		function onRegisterWysiwyg(&$event){
+		function onRegisterWysiwyg($event){
 			return 'tiny_mce';
 		}
 
-		function onRequireJavascriptToLoad(&$event, $data){
+		function onRequireJavascriptToLoad($event, $data){
 			if(Configure::read('Wysiwyg.editor') != 'tiny_mce'){
 				return false;
 			}
