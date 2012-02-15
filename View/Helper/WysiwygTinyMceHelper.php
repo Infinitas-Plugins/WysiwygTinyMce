@@ -20,7 +20,8 @@
 	 * Redistributions of files must retain the above copyright notice.
 	 */
 
-	class WysiwygTinyMceHelper extends AppHelper {
+	App::uses('InfinitasHelper', 'Libs.View');
+	class WysiwygTinyMceHelper extends InfinitasHelper {
 
 		/**
 		 * @var array
@@ -51,10 +52,6 @@
 			}
 			$lines = implode(', ', $lines);
 
-			App::import('Helper', 'Html');
-			$this->Html = new HtmlHelper();
-
 			return $this->Html->scriptBlock("tinyMCE.init({ $lines });", array('inline' => false));
 		}
 	}
-?>
