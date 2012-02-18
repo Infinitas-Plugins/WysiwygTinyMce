@@ -15,7 +15,7 @@
 			switch(isset($data['admin']) && $data['admin']){
 				case $data['action'] == 'admin_edit':
 				case $data['action'] == 'admin_add':
-					return '/wysiwyg_tiny_mce/js/tiny_mce';
+					return 'WysiwygTinyMce.tiny_mce';
 					break;
 			}
 
