@@ -27,7 +27,7 @@
 		 * @var array
 		 * @access protected
 		 */
-		var $_defaults = array(
+		public $_defaults = array(
 			'mode' => 'textareas',
 			'theme' => 'advanced',
 			'theme_advanced_toolbar_location' => 'top',
