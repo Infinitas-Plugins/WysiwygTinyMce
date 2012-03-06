@@ -1,6 +1,6 @@
 <?php
 $map = array(
 	1 => array(
-		'000001_wysiwyg_tiny_mce' => 'R4cdc235e061c478199b0247a6318cd70'),
+		'000009_WysiwygTinyMce' => 'R4f564acabc984be0b5ad4d916318cd70'),
 );
 ?>
