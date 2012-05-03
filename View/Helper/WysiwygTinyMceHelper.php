@@ -52,6 +52,15 @@
 			}
 			$lines = implode(', ', $lines);
 
-			return $this->Html->scriptBlock("tinyMCE.init({ $lines });", array('inline' => false));
+			return $this->Html->scriptBlock(
+				sprintf(
+					"tinyMCE.init({ %s });",
+					$lines
+				), 
+				array(
+					'inline' => false,
+					'block' => 'scripts_for_layout'
+				)
+			);
 		}
 	}
