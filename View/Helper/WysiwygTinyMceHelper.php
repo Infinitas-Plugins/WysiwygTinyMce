@@ -20,7 +20,7 @@
 	 * Redistributions of files must retain the above copyright notice.
 	 */
 
-	App::uses('InfinitasHelper', 'Libs.View');
+	App::uses('InfinitasHelper', 'Libs.View/Helper');
 	class WysiwygTinyMceHelper extends InfinitasHelper {
 
 		/**
@@ -56,7 +56,7 @@
 				sprintf(
 					"tinyMCE.init({ %s });",
 					$lines
-				), 
+				),
 				array(
 					'inline' => false,
 					'block' => 'scripts_for_layout'
