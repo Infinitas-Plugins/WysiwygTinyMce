@@ -12,13 +12,12 @@
 				return false;
 			}
 
-			switch(isset($data['admin']) && $data['admin']) {
-				case $data['action'] == 'admin_edit':
-				case $data['action'] == 'admin_add':
-					return 'WysiwygTinyMce.tiny_mce';
-					break;
+			if(isset($Event->Handler->request->params['admin']) && $Event->Handler->request->params['admin']) {
+				if(in_array($Event->Handler->request->params['action'], array('admin_edit', 'admin_add'))) {
+					return array(
+						'WysiwygTinyMce.tiny_mce'
+					);
+				}
 			}
-
-			return false;
 		}
 	}
