@@ -2,12 +2,12 @@
 	/**
 	 * events for ck_editor
 	 */
-	class WysiwygTinyMceEvents{
-		function onRegisterWysiwyg($event) {
+	class WysiwygTinyMceEvents {
+		function onRegisterWysiwyg(Event $Event) {
 			return 'tiny_mce';
 		}
 
-		function onRequireJavascriptToLoad($event, $data) {
+		function onRequireJavascriptToLoad(Event $Event, $data) {
 			if(Configure::read('Wysiwyg.editor') != 'tiny_mce') {
 				return false;
 			}
@@ -20,5 +20,5 @@
 			}
 
 			return false;
-		} 
+		}
 	}
