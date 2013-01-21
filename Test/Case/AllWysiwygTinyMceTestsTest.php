@@ -1,5 +1,7 @@
 <?php
-class AllWysiwygTinyMceViewCounterTestsTest extends PHPUnit_Framework_TestSuite {
+App::uses('AllTestsBase', 'Test/Lib');
+
+class AllWysiwygTinyMceViewCounterTestsTest extends AllTestsBase {
 
 /**
  * Suite define the tests for this suite
